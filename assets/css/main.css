@@ -23,16 +23,24 @@ ul {
 .header {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--PrimaryColorBackground);
     padding: 2px;
 
 
 }
+.header .container{
+   display: flex; 
+   justify-content: space-between;
+   flex-wrap: nowrap;
+   align-items: center;
+}
 
 .container {
     width: 70%;
     margin: auto;
+    /* max-width: 1400px;
+    margin: 0 auto; */
 }
 
 .header .logo a {
@@ -53,9 +61,25 @@ ul {
     height: 80%;
     text-align: center;
 } */
-.search-from {
-    width: 20%;
+.search-from  {
+    
+    /* margin-top: 6px; */
+    /* margin-left: 10px; */
+    
 }
+.search-from input{
+    border: 0px;
+    padding: 7px 15px;
+    
+}
+.search-from form{
+    border: 2px solid #000;
+    display: flex;
+    align-items: stretch;
+    
+    
+}
+
 
 .serves {
     display: flex;
@@ -81,6 +105,7 @@ ul {
 .serves .serveses img {
     width: 100%;
 }
+
 
 .serveses h2 {
     text-align: center;

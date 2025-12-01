@@ -10,7 +10,7 @@ a {
 
 :root {
     --PrimaryColorBackground: #19b3c7;
-    --PrimaryColorLogo: #990c99;
+    --PrimaryColorLogo: #130068;
 
 
 }
@@ -25,15 +25,27 @@ ul {
     flex-wrap: nowrap;
     justify-content: space-between;
     background-color: var(--PrimaryColorBackground);
-    padding: 2px;
+    padding:10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* margin-top: -10px; */
 
 
+}
+.Login{
+    background-color: yellow;
+    position: fixed;
+    padding: 5px;
+    left: 10px;
+    bottom: 50%;
 }
 .header .container{
    display: flex; 
    justify-content: space-between;
    flex-wrap: nowrap;
    align-items: center;
+
 }
 
 .container {
@@ -41,19 +53,39 @@ ul {
     margin: auto;
     /* max-width: 1400px;
     margin: 0 auto; */
+
 }
 
-.header .logo a {
+.header .container .logo h1 {
     color: var(--PrimaryColorLogo);
+    /* background-color: rgb(107, 11, 11); */
+    width: 100%;
 }
 
 .header ul {
     display: flex;
-    gap: 10px;
+    justify-content: center;
     align-items: center;
     gap: 30px;
     font-size: x-large;
     margin-top: 5px;
+    /* background-color: rgb(226, 7, 255); */
+}
+.Login p{
+    display: none;
+
+}
+
+.Login:hover p{
+    display: block;
+}
+.header  .list a:hover{
+    /* color: yellow; */
+    color: yellow;
+    font-size: 29px;
+}
+.header  .list a{
+    transition: 1s;
 }
 
 /* .logo img{
@@ -87,7 +119,7 @@ ul {
     flex-wrap:wrap;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 80px;
     
 
 
@@ -99,11 +131,26 @@ ul {
     width: calc(( 100% - 30px ) / 4 );
 
 }
+.serves .serveses img:hover{
+    padding: 10px;
+    border: 1px solid red;
+    background-color: yellow;
+    /* filter: grayscale(0.9); */
+    /* filter: blur(5px); */
+    /* filter: brightness(40%); */
+}
 
 
 
 .serves .serveses img {
     width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition-property:display: flex;
+    transition-duration: 1s; 
+    
+    /* transition: background-color 1s , font-size 1s; */
 }
 
 
